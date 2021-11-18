@@ -158,7 +158,7 @@ def event_handle(event):
         elif (msg == "อยู่ไหน") :
             replyObj = TextSendMessage(text="อยู่ในใจเสมอ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "เอาไปเลย1นิ้วโป้ง") :
+        else :
             headers = request.headers
             json_headers = json.dumps({k:v for k, v in headers.items()})
             '''
